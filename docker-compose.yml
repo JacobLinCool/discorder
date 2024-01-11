@@ -11,7 +11,8 @@ services:
         restart: always
         volumes:
             - ./data:/app/data
-        network_mode: host
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
     #     depends_on:
     #         - whisper
 
