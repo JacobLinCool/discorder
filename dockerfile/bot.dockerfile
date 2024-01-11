@@ -32,4 +32,4 @@ COPY --from=builder /app/pnpm-lock.yaml ./pnpm-lock.yaml
 
 COPY --from=builder /app/eula.md ./eula.md
 
-CMD ["npm", "start"]
+CMD ["bash", "-c", "npm run register && npm start"]
