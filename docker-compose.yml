@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+    bot:
+        build:
+            context: .
+            dockerfile: dockerfile/bot.dockerfile
+        image: jacoblincool/discorder-bot
+        env_file:
+            - .env
+        restart: always
+        volumes:
+            - ./data:/app/data
+        network_mode: host
+    #     depends_on:
+    #         - whisper
+
+    # whisper:
+    #     build:
+    #         context: .
+    #         dockerfile: dockerfile/whisper.dockerfile
+    #     image: jacoblincool/discorder-whisper
+    #     restart: always
+    #     ports:
+    #         - 38080:38080
