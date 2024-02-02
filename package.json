@@ -53,7 +53,7 @@
 		"vitest": "^1.1.0"
 	},
 	"optionalDependencies": {
-		"smart-whisper": "^0.1.2"
+		"smart-whisper": "^0.7.0"
 	},
 	"lint-staged": {
 		"*.{ts,js,json,yaml,yml}": [
