@@ -68,5 +68,5 @@
 		"url": "https://github.com/JacobLinCool/discorder/issues"
 	},
 	"homepage": "https://jacoblincool.github.io/discorder",
-	"packageManager": "pnpm@8.13.1"
+	"packageManager": "pnpm@8.15.5"
 }
